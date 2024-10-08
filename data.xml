@@ -1,0 +1,13 @@
+<!-- data.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <news>
+        <title>Breaking News</title>
+        <content>This is a breaking news article.</content>
+    </news>
+    <news>
+        <title>Sports Highlight</title>
+        <content>Exciting sports event takes place.</content>
+    </news>
+    <!-- Add more news items as needed -->
+</data>

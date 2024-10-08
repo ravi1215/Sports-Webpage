@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="dynamic-heading">Sports Website</h1>
+            <nav>
+                <ul>AS
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Football</a>
+                            <a href="#">Basketball</a>
+                            <a href="#">Baseball</a>
+                        </div>
+                    </li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="carousel" id="news-carousel">
+            <div>
+                <h2>Thrilling Football Match</h2>
+                <p>In a thrilling football match, the hometown heroes clinched victory with a stunning last-minute goal, sending fans into a frenzy.</p>
+                <img src="images/maxresdefault.jpg" alt="Football Match" width="800" height="400">
+            </div>
+            <div>
+                <h2>Exciting Cricket Event</h2>
+                <p>Inspired by Virat Kohli and Mohammed Shami, India has overcome a valiant New Zealand fightback to enter the ICC Cricket World Cup 2023 final on home soil.</p>
+                <img src="images/CWC23-Fixtures-announcement-16x9-v2.jpeg" alt="Cricket Event" width="800" height="400">
+            </div>
+        </div>
+        
+        <div class="live-scores" id="live-scores">
+            <h2>Live Scores</h2>
+            <p>Argentina vs. Portugal: 2 - 1</p>
+            <p>Germany vs. France: 0 - 0</p>
+            <!-- Add more live scores dynamically using JavaScript -->
+        </div>
+        
+        <div class="contact-form" id="contact-form">
+            <h2>Contact Us</h2>
+            <p>Email: sports@gmail.com</p>
+            <p>Phone: 98XXXXXXXX</p>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="rss-feed" id="rss-feed">
+            <h2>Recent News Feed</h2>
+            <ul id="rss-list">
+                <!-- RSS feed items will be displayed here -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- ... Remaining code ... -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
